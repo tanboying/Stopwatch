@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StopwatchActivity" >
+
+    <TextView
+        android:id="@+id/watchTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="34dp"
+        android:paddingBottom="40dp"
+        android:text="@string/init_watch"
+        android:textSize="30sp" />
+	<ImageView 
+	    android:id="@+id/second_arrow"
+	    android:layout_toRightOf="@id/watchTxt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="60dp"
+	    android:layout_marginLeft="60dp"
+	    android:src="@drawable/second_arrow"/>
+	
+    <LinearLayout
+        android:id="@+id/operatArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/watchTxt"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="15dp">
+
+        <Button 
+            android:id="@+id/stateBtn"
+            android:onClick="handleClick"
+            android:layout_width="100dp" 
+            android:layout_height="wrap_content"
+            android:text="@string/begin_watch"
+            android:layout_marginRight="20dp"/>
+        <Button 
+            android:id="@+id/operatBtn"
+            android:onClick="handleClick"
+            android:layout_width="100dp" 
+            android:layout_height="wrap_content"
+            android:text="@string/reset_watch"/>
+    </LinearLayout>
+	<ListView 
+	    android:id="@+id/resultList"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/operatArea"
+	    ></ListView>
+</RelativeLayout>

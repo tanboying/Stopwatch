@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">秒表</string>
+    <string name="details_history">查看历史</string>
+    <string name="begin_watch">开始</string>
+    <string name="pause_watch">暂停</string>
+    <string name="record_watch">计次</string>
+    <string name="reset_watch">重置</string>
+    <string name="init_watch">00:00.00</string>
+    <string name="title_activity_history_section">历史记录</string>
+    <string name="title_activity_record_details">历史记录</string>
+    <string name="reset_ask">重置结果</string>
+    <string name="save_ask">请问是否保存当前计数</string>
+    <string name="save">保存</string>
+    <string name="not_save">不保存</string>
+    <string name="record_sequence">%s 次</string>
+    <string name="section_sequence">第%s次的结果</string>
+    <string name="wait">请稍候</string>
+</resources>
